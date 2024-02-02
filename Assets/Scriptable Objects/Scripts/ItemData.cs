@@ -16,6 +16,13 @@ public enum ConsumableType
     Health
 }
 
+[System.Serializable]
+public class ItemDataConsumable
+{
+    public ConsumableType type;
+    public float value;
+}
+
 [CreateAssetMenu(fileName ="Item", menuName = "New Item")]
 
 public class ItemData : ScriptableObject
@@ -31,5 +38,9 @@ public class ItemData : ScriptableObject
     public bool canStack;
     public int maxStackAmount;
 
+    [Header("Consumable")]
+    public ItemDataConsumable[] consumables;
 
+    [Header("Equip")]
+    public GameObject equipPrefab;
 }
