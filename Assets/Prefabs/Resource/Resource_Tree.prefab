@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2755307897563072660}
   - component: {fileID: 4739005107517535303}
   - component: {fileID: 2181418512532697338}
+  - component: {fileID: 7630716971038728818}
   m_Layer: 0
   m_Name: Resource_Tree
   m_TagString: Untagged
@@ -32,7 +33,7 @@ Transform:
   m_Children:
   - {fileID: 6077517003333389081}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &4739005107517535303
 BoxCollider:
@@ -69,7 +70,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemToGive: {fileID: 11400000, guid: 92bf9700334220743aa8fdf6c71f18c9, type: 2}
   quantityPerHit: 1
-  capacity: 0
+  capacity: 5
+--- !u!208 &7630716971038728818
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1799147742048626389}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1001 &1372014503108462014
 PrefabInstance:
   m_ObjectHideFlags: 0
